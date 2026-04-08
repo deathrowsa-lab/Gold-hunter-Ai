@@ -2,6 +2,8 @@ flask
 gunicorn
 MetaTrader5
 pandas
+pandas_ta
 python-dotenv
 flask-cors
+
 
