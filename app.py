@@ -28,3 +28,21 @@ def place_trade():
     return jsonify({"status": "success", "order_id": result.order})
     
     
+import threading
+
+def run_bot_continuously():
+    print("Gold Hunter Bot Started...")
+    while True:
+        try:
+            status = auto_trade_logic()
+            print(status)
+        except Exception as e:
+            print(f"Error: {e}")
+        
+        # Wait 60 seconds before checking again
+        time.sleep(60)
+
+# This starts the bot in a separate thread so your App/API still works
+bot_thread = threading.Thread(target=run_bot_continuously)
+bot_thread.daemon = True
+bot_thread.start()
