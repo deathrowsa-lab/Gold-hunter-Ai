@@ -1,2 +1,7 @@
 flask
 gunicorn
+MetaTrader5
+pandas
+python-dotenv
+flask-cors
+
