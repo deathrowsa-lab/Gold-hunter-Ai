@@ -1,5 +1,4 @@
 flask
-MetaTrader5
 pandas
 pandas_ta
 streamlit
