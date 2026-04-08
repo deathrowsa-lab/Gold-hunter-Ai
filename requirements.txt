@@ -1,9 +1,9 @@
 flask
-gunicorn
 MetaTrader5
 pandas
 pandas_ta
+streamlit
+st-theme
 python-dotenv
-flask-cors
 
 
